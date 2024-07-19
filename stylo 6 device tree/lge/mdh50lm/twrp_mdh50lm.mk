@@ -13,13 +13,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from mdh50lm device
 $(call inherit-product, device/lge/mdh50lm/device.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# Inherit some common Twrp stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/twrp/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mdh50lm
-PRODUCT_NAME := omni_mdh50lm
+PRODUCT_NAME := twrp_mdh50lm
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LM-Q730
 PRODUCT_MANUFACTURER := lge
